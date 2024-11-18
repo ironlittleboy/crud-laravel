@@ -10,7 +10,7 @@ class VehiculoController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function indx()
+    public function index()
     {
         //
         return Vehiculo::all();
@@ -19,7 +19,7 @@ class VehiculoController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function stor(Request $request)
+    public function store(Request $request)
     {
         //
         $vehiculo = new Vehiculo();
@@ -32,7 +32,7 @@ class VehiculoController extends Controller
     /**
      * Display the specified resource.
      */
-    public function shower(string $id)
+    public function show(string $id)
     {
 
         //
@@ -43,7 +43,7 @@ class VehiculoController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function editt(string $id)
+    public function edit(string $id)
     {
         //
     }
@@ -51,7 +51,7 @@ class VehiculoController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function updatet(Request $request, string $id)
+    public function update(Request $request, string $id)
     {
         //
         $vehiculo = Vehiculo::FindOrFail($id);
@@ -65,7 +65,7 @@ class VehiculoController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroyi(string $id)
+    public function destroy(string $id)
     {
         //
         $vehiculo = Vehiculo::FindOrFail($id);
